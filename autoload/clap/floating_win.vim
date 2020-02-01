@@ -289,7 +289,7 @@ function! clap#floating_win#open() abort
 
   augroup ClapEnsureAllClosed
     autocmd!
-    " autocmd BufEnter,WinEnter,WinLeave * call s:ensure_closed()
+    autocmd BufEnter,WinEnter,WinLeave * call s:ensure_closed()
   augroup END
 
   call g:clap.input.goto_win()
